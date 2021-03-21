@@ -1,0 +1,13 @@
+{
+    "name": "godilley/smartsupp-whmcs",
+    "description": "A WHMCS module designed to make it easier for providers to integrate smartsupp into their websites, with no template edits",
+    "autoload": {
+        "files": [],
+        "psr-4": {
+            "SmartsuppWHMCS\\": "lib/SmartsuppWHMCS/"
+        }
+    },
+    "require": {
+        "smartsupp/chat-code-generator": "^1.0"
+    }
+}
