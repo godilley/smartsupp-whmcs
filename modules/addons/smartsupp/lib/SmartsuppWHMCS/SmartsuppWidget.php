@@ -15,11 +15,19 @@ class SmartsuppWidget extends SmartsuppBase
      */
     private $uid;
 
+    /**
+     * SmartsuppWidget constructor.
+     */
     public function __construct()
     {
         $this->uid = $_SESSION['uid'];;
     }
 
+    /**
+     * Returns the widget <script>
+     *
+     * @return false|string
+     */
     public function getWidgetScript()
     {
         $apiKey = $this->getApiKey();

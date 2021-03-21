@@ -99,6 +99,12 @@ class SmartsuppBase
         return (string)$apikey->value;
     }
 
+    /**
+     * Returns the url of the client from config
+     *
+     * @param $id
+     * @return false|string
+     */
     public function getClientUrl($id)
     {
         $url = Capsule::table('tbladdonmodules')
@@ -113,6 +119,6 @@ class SmartsuppBase
         }
 
         $url = (string)$url->value;
-        return str_replace('{$id}', $id, $url);
+        return (string)str_replace('{$id}', $id, $url);
     }
 }
